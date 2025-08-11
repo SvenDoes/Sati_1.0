@@ -1,0 +1,382 @@
+    body {
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      margin: 0;
+      background:#ffffff;
+      color: #ffffff;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-text-stroke: 0.7px black; /* Outline thickness and color */
+      text-wrap-style: 2px black; /* Optional fallback */
+      }
+
+    h1 {
+      font-size: 3rem;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    .profile-pic {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 20px auto;
+    }
+    .italic {
+      font-style: italic;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+* { /* Reset margin/padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+* { /* Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.top-ribbon { /* Top ribbon with fixed height */
+  background-color: #282828;
+  color:  white;
+  padding: 0 30px;
+  height: 65px; /* Fixed ribbon height */
+  width: 1525px;
+  display: flex;
+  justify-content: left; 
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+}
+.logo { /* Make logo and nav sit side by side */
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+nav { /* Nav styled as horizontal list */
+  top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* Style individual nav links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+  padding: 8px 12px;
+  transition: color 0.3s;
+  color: white; /* Fill color */
+  -webkit-text-stroke: 1px black; /* Outline thickness and color */
+  text-wrap-style: 2px black; /* Optional fallback */
+}
+nav a:hover {
+  color: #00ffa0; /* highlight on hover */
+}
+
+/* Dropdown wrapper */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown content - hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  min-width: 180px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 10px;     /* position from top */
+  left: 10px;    /* position from left */
+  width: 80px;   /* size of overlay */
+  border-radius: 50%; /* optional: make it a circle */
+}
+
+/* Full-width, fixed-height banner */
+.main-section {
+  margin-top: 0px; /* same height as top ribbon */
+  height: 690px;      /* fixed height */
+  width: 1525px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  box-sizing:content-box;
+  max-width: 1600px;      /* max width of your “pillar” */
+  margin-left: auto;
+  margin-right: auto;    /* centers horizontally */
+  padding: 0 0px;       /* some horizontal padding on small screens */
+
+}
+
+/* Full-width, fixed-height banner */
+.artist-section {
+  margin-top: 0px; /* same height as top ribbon */
+  height: 690px;      /* fixed height */
+  width: 1525px;
+  background-color: #0c4232;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  box-sizing:content-box;
+  max-width: 1600px;      /* max width of your “pillar” */
+  margin-left: auto;
+  margin-right: auto;    /* centers horizontally */
+  padding: 0 0px;       /* some horizontal padding on small screens */
+  position: relative;
+
+}
+
+
+/* Optional inner container for clean content */
+.main-section .container {
+  max-width: 100px;
+  width: 0%;
+  text-align: center;
+}
+
+.second-section {
+  height: 690px;      /* fixed height */
+  width: 1525px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  box-sizing:content-box;
+  max-width: 1920px;      /* max width of your “pillar” */
+  margin-left: auto;
+  margin-right: auto;    /* centers horizontally */
+  padding: 0 0px;       /* some horizontal padding on small screens */
+}
+
+.tertiary-section {
+  height: 690px;      /* fixed height */
+  width: 1525px;
+  background-color: #00aaaa;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  box-sizing:content-box;
+  max-width: 1920px;      /* max width of your “pillar” */
+  margin-left: auto;
+  margin-right: auto;    /* centers horizontally */
+  padding: 0 0px;       /* some horizontal padding on small screens */
+}
+
+/* Optional inner container for clean content */
+.tertiary-section .container {
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-page {
+font-family: "Roboto", sans-serif;
+font-size: 24px;
+margin-top: 0px; /* same height as top ribbon */
+height: 700px;      /* fixed height */
+width: 1525px;
+align-content: center;
+justify-content: center; /* horizontal centering */
+background-color: #ffffff;
+margin-left: auto;
+margin-right: auto;    /* centers horizontally */
+text-align: left;
+text-indent: 200px;
+-webkit-text-stroke: 0px black; /* Outline thickness and color */
+text-wrap-style: 0px black; /* Optional fallback */
+color: #404040;
+font-weight: 100;
+}
+
+.logo img {
+  top: 20px;
+  height: 55px;        /* adjust to fit ribbon height */
+  width: auto;
+  display: block;
+  position: relative;
+  size: 10px;
+}
+
+.logo2 img {
+  top: 20px;
+  height: 55px;        /* adjust to fit ribbon height */
+  width: auto;
+  display: block;
+  position: relative;
+  size: 10px;
+  margin: auto;
+}
+
+.herobanner {
+display: block;
+position: center;
+margin: auto;
+align-items: center;
+justify-content: center; /* horizontal centering */
+transition: transform 0.3s ease;
+}
+
+.herobanner img {
+height: 610px;
+width: 1450px;
+display: block;
+position: center;
+align-items: center;
+justify-content: center; /* horizontal centering */
+margin: auto;
+transform-origin: center center;
+border-radius: 50px; /* Adjust this value as needed */
+}
+
+.herobanner:hover{
+transform: scale(1.05); /* Increase size by 10% */
+}
+
+/* Footer styles */
+.footer {
+  background-color:#ffffff;
+  color: white;
+  height: 50px;
+}
+
+.container {
+  width: 1525px;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  height: 10px;
+  width: 10px;
+  margin: 0;
+  width: 100%;
+  gap: 40px;
+  color: white; /* Fill color */
+  -webkit-text-stroke: 1px black; /* Outline thickness and color */
+  text-wrap-style: 1px black; /* Optional fallback */
+  font-size: 30px;
+}
+
+.social-links a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  font-size: 30px;
+  transition: color 0.3s;
+  -webkit-text-stroke: 1px black; /* Outline thickness and color */
+  text-wrap-style: 1px black; /* Optional fallback */
+}
+
+.social-links a:hover {
+  color: #00ffa0;
+}
+
+
+.footer-links {
+  width: 100%;
+}
+
+.footer-links a {
+  padding: 10px;
+  height: 100%;
+  height: 10px;
+  width: 10px;
+  margin: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* lighter look */ 
+  -webkit-text-stroke: 0px black; /* Outline thickness and color */
+  text-wrap-style: 0px black; /* Optional fallback */
+  font-size: 0.8rem; /* smaller size for subtlety */
+  color: #444444;
+  transition: color 0.3s ease;
+  font-size: 12px;
+
+}
+
+.footer-links a:hover {
+  color: #00ffa0;
+}
+
+@media (max-width: 768px) { /* Mobile override (screens 768px wide or smaller) */
+  .main-section {
+    flex-direction: column;
+    height: auto; /* let it grow with content */
+    padding: 20px;
+  }
+
+  .main-section .container {
+    width: 100%;
+    text-align: left;
+  }
+}
+
